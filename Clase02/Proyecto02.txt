@@ -1,0 +1,19 @@
+
+Hacer una aplicación Web que simule una venta.
+
+Condiciones
+--------------
+
+- Venta de un solo producto
+- Se tiene como datos el precio de venta y la cantidad
+
+El resultado de incluir
+-----------------------
+
+- base imponible: importe = 
+- Impuesto = 
+- Valor de Venta: precio de venta * cantidad
+
+
+
+
