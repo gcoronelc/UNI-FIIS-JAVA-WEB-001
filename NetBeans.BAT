@@ -1,0 +1,1 @@
+"E:\Program Files\NetBeans 8.1\bin\netbeans64.exe" --fontsize 18 --console suppress
