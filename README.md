@@ -44,11 +44,24 @@
 
 # CLASES
 
-- Clase 01: 13-AGO-2016 
-- Clase 02: 14-AGO-2016 
-- Clase 03: 15-AGO-2016 
-- Clase 04: 16-AGO-2016 
-- Clase 05: 17-AGO-2016 
+## Clase 01: 13-AGO-2016 
+
+- Video 01: https://www.youtube.com/watch?v=trWVQBCWtsA
+- Video 02: https://www.youtube.com/watch?v=g6nAgqb0n2c
+- Video 03: https://www.youtube.com/watch?v=tSfVplocvBA
+- Video 04: https://www.youtube.com/watch?v=PUlqPVEaDIc
+
+
+## Clase 02: 14-AGO-2016 
+
+
+## Clase 03: 15-AGO-2016 
+
+
+## Clase 04: 16-AGO-2016 
+
+
+## Clase 05: 17-AGO-2016 
 
 
 
