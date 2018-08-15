@@ -54,6 +54,11 @@
 
 ## Clase 02: 14-AGO-2016 
 
+- Video 01: https://www.youtube.com/watch?v=Hpq_KCJTd-A
+- Video 02: https://www.youtube.com/watch?v=CC9qWqFXJmg
+- Video 03: https://www.youtube.com/watch?v=1U7ToT18jtk
+- Video 04: https://www.youtube.com/watch?v=5RPyXWA_p6w
+- Video 05: https://www.youtube.com/watch?v=XjU__HFrBHY
 
 ## Clase 03: 15-AGO-2016 
 

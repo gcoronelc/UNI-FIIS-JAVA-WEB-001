@@ -22,6 +22,7 @@ public class VentaController extends HttpServlet {
       // Proceso
       VentaDto dto = new VentaDto(precio, cantidad);
       VentaService service = new VentaService();
+      service.procesarVenta(dto);
       // Datos para la vista
       request.setAttribute("dto", dto);
     } catch (Exception e) {
