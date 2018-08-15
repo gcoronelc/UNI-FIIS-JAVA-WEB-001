@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>VENTA</title>
+  </head>
+  <body>
+    <h1>VENTA ON-LINE</h1>
+    <!-- ERROR -->
+    <div id="divError" style="color:red;display:none;">error</div>
+    <!-- FORMULARIO -->
+    <form id="form1">
+      <fieldset>
+        <legend>DATOS DE LA VENTA</legend>
+        <div>
+          <label>Precio: </label>
+          <input type="text" name="precio" value="0"/>
+        </div>
+        <div>
+          <label>Cantidad </label>
+          <input type="text" name="cantidad" value="0"/>
+        </div>
+        <div>
+          <input id="btnProcesar" type="button" value="Procesar Venta" />
+        </div>   
+      </fieldset>
+    </form>
+    <div id="divResultado" style="display:none;">
+      <fieldset>
+        <legend>RESULTADO</legend>
+        <h2>INPUT</h2>
+        <div>Precio: <span id="precio"></span></div>
+        <div>Cantidad: <span id="cantidad"></span></div>
+        <h2>OUTPUT</h2>
+        <div>Importe: <span id="importe"></span></div>
+        <div>Impuesto: <span id="impuesto"></span></div>
+        <div>Total: <span id="total"></span></div>
+      </fieldset>      
+    </div>
+    <script src="jquery/jquery-3.3.1.js" type="text/javascript"></script>
+    <script>
+      
+      $("#btnProcesar").click(function(){
+        
+        $("#divError").hide();
+        $("#divResultado").hide();
+        
+        var data = $("#form1").serialize();
+        $.post("VentaController", data, function(response){
+          
+          if( response.codigo == 1){
+            var dto = jQuery.parseJSON( response.mensaje );
+            $("#precio").html(dto.precio);
+            $("#cantidad").html(dto.cantidad);
+            $("#importe").html(dto.importe);
+            $("#impuesto").html(dto.impuesto);
+            $("#total").html(dto.total);
+            $("#divResultado").show();
+          } else {
+            $("#divError").html(response.mensaje);
+            $("#divError").show();
+          }
+          
+          
+        });
+        
+      });
+      
+    </script>
+  </body>
+</html>
