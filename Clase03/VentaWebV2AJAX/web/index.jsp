@@ -7,13 +7,10 @@
     <title>VENTA</title>
   </head>
   <body>
-    <h1>VENTA ON-LINE</h1>
     <!-- ERROR -->
     <c:if test="${error != null}">
       <div style="color:red;">${error}</div>
     </c:if>
-    
-    
     <c:if test="${dto != null}">
       <fieldset>
         <legend>RESULTADO</legend>

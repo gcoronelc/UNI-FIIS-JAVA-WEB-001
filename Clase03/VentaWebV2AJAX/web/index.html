@@ -31,7 +31,12 @@
       
       $("#btnProcesar").click(function(){
         
-        alert("Falta poco");
+        var data = $("#form1").serialize();
+        $.post("VentaController", data, function(response){
+          $("#divResultado").html(response);
+          //console.log(response);
+          //alert(response);
+        });
         
       });
       
