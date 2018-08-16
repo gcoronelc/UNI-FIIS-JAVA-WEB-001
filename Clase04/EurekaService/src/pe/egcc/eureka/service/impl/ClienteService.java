@@ -3,6 +3,8 @@ package pe.egcc.eureka.service.impl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import pe.egcc.eureka.db.AccesoDB;
 import pe.egcc.eureka.dto.ClienteDto;
@@ -44,8 +46,23 @@ public class ClienteService extends AbstractService implements ClienteEspec {
     return lista;
   }
 
-  private List<ClienteDto> mapper(ResultSet rs) {
-    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+  private List<ClienteDto> mapper(ResultSet rs) throws SQLException {
+    List<ClienteDto> lista = new ArrayList<>();
+    while(rs.next()){
+      ClienteDto dto = new ClienteDto();
+      dto.setCodigo(rs.getString("CHR_CLIECODIGO"));
+      dto.setCodigo(rs.getString("VCH_CLIEPATERNO"));
+      dto.setCodigo(rs.getString("VCH_CLIEMATERNO"));
+      dto.setCodigo(rs.getString("VCH_CLIENOMBRE"));
+      dto.setCodigo(rs.getString("CHR_CLIEDNI"));
+      dto.setCodigo(rs.getString("VCH_CLIECIUDAD"));
+      dto.setCodigo(rs.getString("VCH_CLIEDIRECCION"));
+      dto.setCodigo(rs.getString("VCH_CLIETELEFONO"));
+      dto.setCodigo(rs.getString("VCH_CLIEEMAIL"));
+      lista.add(dto);
+    }
+    return lista;
   }
+
 
 }
