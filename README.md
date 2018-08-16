@@ -60,7 +60,12 @@
 - Video 04: https://www.youtube.com/watch?v=5RPyXWA_p6w
 - Video 05: https://www.youtube.com/watch?v=XjU__HFrBHY
 
+
 ## Clase 03: 15-AGO-2016 
+
+- Video 01: https://youtu.be/W9e_4HUCQnE
+- Video 02: https://youtu.be/ZoacF225aJY
+- Video 03: https://youtu.be/CG5CIey8TPs
 
 
 ## Clase 04: 16-AGO-2016 
