@@ -1,3 +1,11 @@
+function cargarPagina( pagina ){
+  var divWork = $("#divWork");
+  showEsperaAjax(divWork);
+  $.get(pagina, function(response){
+    divWork.html(response);
+  });
+}
+
 
 function showEsperaAjax( objDiv){
   var html = "";

@@ -6,8 +6,9 @@ public class Prueba03 {
 
   public static void main(String[] args) {
     CuentaService service = new CuentaService();
-    int rpta = service.procRetiro("00100001", 10, "123456", "0005");
-    System.out.println("Rpta: " + rpta);
+    double saldo = service.procRetiro("00100001", 10, "123456", "0005");
+    System.out.println("Saldo: " + saldo);
+    System.out.println("Rpta: " + service.getCodigo());
     System.out.println("Mensaje: " + service.getMensaje());
   }
 

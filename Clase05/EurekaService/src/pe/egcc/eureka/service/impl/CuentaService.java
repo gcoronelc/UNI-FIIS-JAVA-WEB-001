@@ -9,25 +9,28 @@ import pe.egcc.eureka.service.espec.CuentaEspec;
 public class CuentaService extends AbstractService implements CuentaEspec{
 
   @Override
-  public int procRetiro(String cuenta, double importe, String clave, String empleado) {
+  public double procRetiro(String cuenta, double importe, String clave, String empleado) {
     Connection cn = null;
     String sql = null;
     PreparedStatement pstm = null;
     ResultSet rs = null;
     int filas = 0;
-    double saldo;
+    double saldo = 0;
     int contMov = 0;
     try {
       cn = AccesoDB.getConnection();
       cn.setAutoCommit(false);
       // Inicio del proceso       
       // Paso 1: Verificar saldo
-      sql = "select dec_cuensaldo from cuenta where chr_cuencodigo = ?";
+      sql = "select dec_cuensaldo from cuenta "
+              + "where chr_cuencodigo = ? and chr_cuenclave = ? "
+              + "for update ";
       pstm = cn.prepareStatement(sql);
       pstm.setString(1, cuenta);
+      pstm.setString(2, clave);
       rs = pstm.executeQuery();
       if( ! rs.next() ){
-        throw new Exception("Cuenta no existe.");
+        throw new Exception("Cuenta o clave no existe.");
       }
       saldo = rs.getDouble("dec_cuensaldo");
       if( saldo < importe){
@@ -36,6 +39,7 @@ public class CuentaService extends AbstractService implements CuentaEspec{
       rs.close();
       pstm.close();
       // Actualizar el saldo
+      Thread.currentThread().sleep(3000);
       saldo -= importe;
       sql = "update cuenta set dec_cuensaldo = ?, "
               + "int_cuencontmov = int_cuencontmov + 1 "
@@ -84,7 +88,7 @@ public class CuentaService extends AbstractService implements CuentaEspec{
       } catch (Exception e) {
       }
     }
-    return this.getCodigo();
+    return saldo;
   }
   
 }
