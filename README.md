@@ -70,6 +70,9 @@
 
 ## Clase 04: 16-AGO-2016 
 
+- Video 01: https://youtu.be/EPhDbIwEHkc
+- Video 02: https://youtu.be/vGfCK5nYtM4
+- Video 03: https://youtu.be/lfYLgy8B0tw
 
 
 ## Clase 05: 17-AGO-2016 
