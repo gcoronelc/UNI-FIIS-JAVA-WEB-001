@@ -45,6 +45,7 @@
 # CLASES
 
 ## Clase 01: 13-AGO-2016 
+## Servlest, JSP, MVC
 
 - Video 01: https://www.youtube.com/watch?v=trWVQBCWtsA
 - Video 02: https://www.youtube.com/watch?v=g6nAgqb0n2c
@@ -53,6 +54,7 @@
 
 
 ## Clase 02: 14-AGO-2016 
+## JSP, JSTL, MVC, DTO 
 
 - Video 01: https://www.youtube.com/watch?v=Hpq_KCJTd-A
 - Video 02: https://www.youtube.com/watch?v=CC9qWqFXJmg
@@ -62,6 +64,7 @@
 
 
 ## Clase 03: 15-AGO-2016 
+## JQUERY, AJAX, JSON, GSON, ORACLE, JDBC
 
 - Video 01: https://youtu.be/W9e_4HUCQnE
 - Video 02: https://youtu.be/ZoacF225aJY
@@ -69,6 +72,7 @@
 
 
 ## Clase 04: 16-AGO-2016 
+## JDBC, CONSULTAS
 
 - Video 01: https://youtu.be/EPhDbIwEHkc
 - Video 02: https://youtu.be/vGfCK5nYtM4
@@ -76,6 +80,10 @@
 
 
 ## Clase 05: 17-AGO-2016 
+## Transacciones
 
-
+- Video 01: https://youtu.be/qDAGbHXfrZE
+- Video 02: https://youtu.be/aqnqNbYFqtk
+- Video 03: https://youtu.be/6hMA33bmT1I
+- Video 04: https://youtu.be/-IOFF85UFmY
 
